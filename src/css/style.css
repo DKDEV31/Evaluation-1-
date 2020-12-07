@@ -31,19 +31,36 @@ nav {
 button {
     border: none;
     background: none;
+    color: #d32f2f;
 }
-.button-sign {
-    width: 20px;
-    height: 2px;
-    display: block;
-    background: #d32f2f;
-    margin: 5px 0 5px 0;
+button:hover{
+    color : white;
 }
+
 .menu-desktop {
     display: none;
 }
 .menu-content {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    background: #484848;
+    padding: 15px;
+    right: 0px;
+    top: 30px;
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.79);
+    border-radius : 3px;
+    outline: none;
+}
+.menu-content>a{
+    text-decoration: none;
+    color:  #d32f2f;
+}
+.menu-content>a:hover{
+    color:  white;
+}
+.active{
+    display: flex;
 }
 
 /* Section Story */
@@ -82,13 +99,15 @@ button {
 .action-wrapper > span {
     display: block;
     width: 90px;
-    height: 3px;
-    margin: 10px 0;
+    height: 2px;
+    margin-top: 15px;
     background: #ff6659;
 }
 .actions {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 15px;
     margin-top: 10px;
 }
 .music,
@@ -117,14 +136,20 @@ footer > p {
     padding: 0%;
 }
 
+/* Button menu */
+
+
+
 /* Media Query */
 
 @media (min-width: 880px) {
     .actions {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        margin-top: 80px;
+        gap: 30px;
+        margin-top: 100px;
     }
+   
     .story-wrapper {
         width: 880px;
         margin: auto;

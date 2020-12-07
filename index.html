@@ -28,10 +28,8 @@
                         <a href="#actions">Nos actions</a>
                         <a href="">Nos evenements</a>
                     </div>
-                    <button>
-                        <span class="button-sign"></span>
-                        <span class="button-sign"></span>
-                        <span class="button-sign"></span>
+                    <button id="menu">
+                        <i class="fas fa-bars fa-lg"></i>
                     </button>
                     <div class="menu-content">
                         <a href="">Notre histoire</a>
@@ -89,6 +87,18 @@
                 <p>Copyright</p>
             </footer>
         </main>
+        <script>
+            const button = document.getElementById('menu')
+            const menu = document.querySelector('.menu-content')
+
+            button.addEventListener('click', () => {
+                menu.classList.add('active')
+            })
+
+            button.addEventListener('blur', () => {
+                menu.classList.remove('active')
+            })
+        </script>
         <script
             src="https://kit.fontawesome.com/d1445169b2.js"
             crossorigin="anonymous"
