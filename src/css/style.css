@@ -1,0 +1,93 @@
+body {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+}
+
+/* Higher part of the page (Header and nav) */
+main {
+    min-width: 375px;
+}
+header{
+    background: #212121;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.title {
+    color: #d32f2f;
+}
+button {
+    border: none;
+    background: none;
+}
+.button-sign {
+    width: 20px;
+    height: 2px;
+    display: block;
+    background: #d32f2f;
+    margin: 5px 0 5px 0;
+}
+.menu-desktop {
+    display: none;
+}
+.menu-content {
+    display: none;
+}
+
+/* Section Story */
+
+.story-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 0 15px;
+    text-align: center;
+    background: #484848;
+}
+.story-wrapper > span{
+    display: block;
+    width: 90px;
+    height: 2px;
+    margin: 10px 0;
+    background: #ff6659;
+}
+
+/* section Who are fall industry */
+
+
+.action-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 0 15px;
+    text-align: center;
+    background: #212121;
+}
+.action-wrapper > span{
+    display: block;
+    width: 90px;
+    height: 2px;
+    margin: 10px 0;
+    background: #ff6659;
+}
+
+/* footer */
+
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #212121;
+    color: white;
+}
