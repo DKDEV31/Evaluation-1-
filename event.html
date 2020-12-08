@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dosis:wght@517&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@517&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./src/css/event-style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Evenements à venir" />
+        <meta name="robots" content="index" />
+        <title>Evenements - Fall industry</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <nav>
+                    <h1 class="title">Fall industry</h1>
+                    <div class="menu-desktop">
+                        <a href="/#story">Notre histoire</a>
+                        <a href="/#actions">Nos actions</a>
+                        <a href="/event.html">Nos evenements</a>
+                    </div>
+                    <button id="menu">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                    <div class="menu-content">
+                        <a href="/index.html/#story">Notre histoire</a>
+                        <a href="/#actions">Nos Actions</a>
+                        <a href="/event.html">Nos événements</a>
+                    </div>
+                </nav>
+            </header>
+            <section id="event">
+                <div class="grid-container">
+                    <div class="event-card">
+                        <div class="card-img"></div>
+                        <div class="card-content">
+                            <div class="card-text">
+                                <h3>Event 1</h3>
+                                <span></span>
+                                <p>
+                                    Fugiat dolor magna mollit dolore culpa
+                                    commodo sint.
+                                </p>
+                                <p class="event-date">08/12/2020</p>
+                            </div>
+                            <div class="event">
+                                <p>03</p>
+                                <i class="far fa-calendar fa-3x"></i>
+                                <button class="buy-button">Ticket</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="card-img"></div>
+                        <div class="card-content">
+                            <div class="card-text">
+                                <h3>Event 2</h3>
+                                <span></span>
+                                <p>
+                                    Fugiat dolor magna mollit dolore culpa
+                                    commodo sint.
+                                </p>
+                                <p class="event-date">08/12/2020</p>
+                            </div>
+                            <div class="event">
+                                <p>15</p>
+                                <i class="far fa-calendar fa-3x"></i>
+                                <button class="buy-button">Ticket</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="card-img"></div>
+                        <div class="card-content">
+                            <div class="card-text">
+                                <h3>Event 3</h3>
+                                <span></span>
+                                <p></p>
+                                <p class="event-date">08/12/2020</p>
+                            </div>
+                            <div class="event">
+                                <p>25</p>
+                                <i class="far fa-calendar fa-3x"></i>
+                                <button class="buy-button">Ticket</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <p>Copyright© Benjamin Faucheux 2020</p>
+            </footer>
+        </main>
+        <script>
+            const button = document.getElementById("menu");
+            const menu = document.querySelector(".menu-content");
+            
+            button.addEventListener("click", () => {
+                menu.classList.add("active");
+            });
+
+            window.addEventListener('mouseup', (e) => {
+                e.preventDefault
+                menu.classList.remove("active")
+            })
+            
+        </script>
+        <script
+            src="https://kit.fontawesome.com/d1445169b2.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
