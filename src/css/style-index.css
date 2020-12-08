@@ -19,9 +19,9 @@ header {
     position: fixed;
     top: 0;
     z-index: 9999;
-    width: 100%
+    width: 100%;
 }
-.main-container{
+.main-container {
     position: relative;
     top: 39px;
 }
@@ -41,8 +41,8 @@ button {
     background: none;
     color: #d32f2f;
 }
-button:hover{
-    color : white;
+button:hover {
+    color: white;
 }
 
 .menu-desktop {
@@ -56,18 +56,18 @@ button:hover{
     padding: 15px;
     right: 0px;
     top: 30px;
-    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.79);
-    border-radius : 3px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.79);
+    border-radius: 3px;
     outline: none;
 }
-.menu-content>a{
+.menu-content > a {
     text-decoration: none;
-    color:  #d32f2f;
+    color: #d32f2f;
 }
-.menu-content>a:hover{
-    color:  white;
+.menu-content > a:hover {
+    color: white;
 }
-.active{
+.active {
     display: flex;
 }
 
@@ -146,8 +146,6 @@ footer > p {
 
 /* Button menu */
 
-
-
 /* Media Query */
 
 @media (min-width: 880px) {
@@ -157,13 +155,13 @@ footer > p {
         gap: 30px;
         margin-top: 100px;
     }
-   
+
     .story-wrapper {
         width: 880px;
         margin: auto;
         background: none;
     }
-    .main-container> section {
+    .main-container > section {
         background: #484848;
     }
     nav > button {
@@ -175,9 +173,9 @@ footer > p {
     .menu-desktop > a {
         text-decoration: none;
         color: #d32f2f;
-        margin-left: 20px
+        margin-left: 20px;
     }
-    .menu-desktop> a:hover{
+    .menu-desktop > a:hover {
         scale: 1.5;
         color: white;
     }
