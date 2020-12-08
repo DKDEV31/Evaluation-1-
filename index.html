@@ -12,7 +12,7 @@
             href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@517&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="./src/css/style.css" />
+        <link rel="stylesheet" href="./src/css/style-index.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Collectif musical Toulousain" />
         <meta name="robots" content="index" />
@@ -26,15 +26,15 @@
                     <div class="menu-desktop">
                         <a href="#story">Notre histoire</a>
                         <a href="#actions">Nos actions</a>
-                        <a href="">Nos evenements</a>
+                        <a href="/event.html">Nos evenements</a>
                     </div>
                     <button id="menu">
                         <i class="fas fa-bars fa-lg"></i>
                     </button>
                     <div class="menu-content">
-                        <a href="">Notre histoire</a>
-                        <a href="">Nos Actions</a>
-                        <a href="">Nos événements</a>
+                        <a href="#story">Notre histoire</a>
+                        <a href="#actions">Nos Actions</a>
+                        <a href="/event.html">Nos événements</a>
                     </div>
                 </nav>
             </header>
@@ -95,7 +95,7 @@
                 menu.classList.add('active')
             })
 
-            button.addEventListener('blur', () => {
+            window.addEventListener('mouseup', () => {
                 menu.classList.remove('active')
             })
         </script>
