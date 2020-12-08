@@ -16,6 +16,14 @@ main {
 }
 header {
     background: #212121;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%
+}
+.main-container{
+    position: relative;
+    top: 39px;
 }
 nav {
     display: flex;
@@ -70,7 +78,7 @@ button:hover{
     flex-direction: column;
     align-items: center;
     color: white;
-    padding: 30px 15px;
+    padding: 20px;
     text-align: center;
     background: #484848;
 }
@@ -89,7 +97,7 @@ button:hover{
     flex-direction: column;
     align-items: center;
     color: white;
-    padding: 15px 15px;
+    padding: 15px;
     text-align: center;
     background-image: url("../img/pim-myten-m41k1lTzjVM-unsplash.jpg");
     background-size: cover;
@@ -155,7 +163,7 @@ footer > p {
         margin: auto;
         background: none;
     }
-    main > section {
+    .main-container> section {
         background: #484848;
     }
     nav > button {
