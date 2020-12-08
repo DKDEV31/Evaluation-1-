@@ -10,6 +10,10 @@ a,
 h3 {
     font-family: "Dosis", sans-serif;
 }
+.main-container{
+    position: relative;
+    top: 39px;
+}
 
 /* Higher part of the page (Header and nav) */
 main {
@@ -76,8 +80,6 @@ button:hover {
     gap: 15px;
     background: #484848;
     padding: 15px;
-    position: relative;
-    top: 39px;
 }
 .event-card {
     margin: auto;
@@ -213,4 +215,5 @@ footer > p {
         height: 200px;
         width: 600px;
     }
+    
 }
