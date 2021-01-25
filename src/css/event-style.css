@@ -8,22 +8,27 @@ p,
 h2,
 a,
 h3 {
-    font-family: "Dosis", sans-serif;
+    font-family: 'Dosis', sans-serif;
 }
-.main-container{
-    position: relative;
-    top: 39px;
+main {
+    min-width: 375px;
 }
 
 /* Higher part of the page (Header and nav) */
-main {
-    min-width: 375px;
+.main-container {
+    position: relative;
+    width: 100%;
+    top: 60px;
 }
 header {
     background: #212121;
     position: fixed;
     width: 100%;
+    height: 60px;
     z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 nav {
     display: flex;
@@ -33,8 +38,8 @@ nav {
 }
 .title {
     color: #d32f2f;
-    font-family: "Bebas neue", cursive;
-    font-size: 30px;
+    font-family: 'Bebas neue', cursive;
+    font-size: 2.5em;
 }
 button {
     border: none;
@@ -74,36 +79,45 @@ button:hover {
 /* Section Event */
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
     gap: 15px;
     background: #484848;
-    padding: 15px;
+    padding: 15px 0;
 }
 .event-card {
-    margin: auto;
-    background: white;
     display: flex;
-    align-items: center;
-    flex-direction: column;
     width: 350px;
+    overflow: hidden;
+    justify-self: center;
+    align-self: center;
+    flex-direction: column;
     border-radius: 6px;
     box-shadow: 1px 2px 6px -1px #000000;
 }
+#event1 {
+    grid-row: 1;
+    grid-column: 2/4;
+}
+#event2 {
+    grid-row: 2;
+    grid-column: 2/4;
+}
+#event3 {
+    grid-row: 3;
+    grid-column: 2/4;
+}
 
 .card-img {
-    height: 125px;
-    width: 350px;
-    border-radius: 5px 5px 0 0;
-    overflow: hidden;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .card-img > img {
-    height: auto;
     width: 350px;
+    height: 125px;
 }
 
 .card-content {
@@ -111,13 +125,21 @@ button:hover {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     padding: 10px;
-    width: 350px;
+    background: white;
+    width: 100%;
     height: auto;
 }
 .card-text {
     grid-column: 1/3;
     overflow-wrap: break-word;
 }
+.card-text > p {
+    font-size: 1.1em;
+}
+.card-title {
+    font-size: 1.4em;
+}
+
 .card-text > span {
     background: #d32f2f;
     width: 60px;
@@ -126,6 +148,8 @@ button:hover {
     display: block;
     margin: 10px 0;
 }
+
+/*Event Icon and Date*/
 
 .event {
     display: flex;
@@ -155,8 +179,9 @@ button:hover {
     margin-top: 10px;
     border-radius: 4px;
     width: 70px;
-    font-family: "Dosis", sans-serif;
+    font-family: 'Dosis', sans-serif;
     font-size: 17px;
+    cursor: pointer;
 }
 .buy-button:hover {
     color: #d32f2f;
@@ -197,6 +222,7 @@ footer > p {
         text-decoration: none;
         color: #d32f2f;
         margin-left: 20px;
+        font-size: 1.1em;
     }
     .menu-desktop > a:hover {
         color: white;
@@ -204,16 +230,8 @@ footer > p {
     .event-card {
         width: 600px;
     }
-    .card-content {
-        width: 600px;
-    }
-    .card-img {
-        height: 200px;
-        width: 600px;
-    }
     .card-img > img {
         height: 200px;
         width: 600px;
     }
-    
 }
